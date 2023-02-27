@@ -1,0 +1,31 @@
+.navbar{
+    display: grid;
+    width: 100%;
+    margin: 3vh;
+    grid-template-columns: repeat(3,1fr);
+}
+.logo{
+    margin-left: 20px;
+}
+
+.center-navbar{
+    display: flex;
+    justify-content: center;
+    /* margin: 10px; */
+}
+
+.center-navbar h4{
+    margin: 5px;
+    margin-right: 15px;
+}
+
+.right-navbar{
+    display: flex;
+    /* margin: 5px; */
+    justify-content: end;
+}
+
+.right-navbar h4{
+    margin: 5px;
+    margin-right: 60px;
+}
