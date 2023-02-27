@@ -1,19 +1,36 @@
-import React from 'react'
+import React, { useState } from 'react'
+import { NavLink } from "react-router-dom";
 import './header.css'
-export default function Header() {
+export default function Header() {  
+  const [display, setDisplay] = useState(window.innerWidth > 1024? true : false);
   return (
-    <div className='navbar'>
-      <div className='logo'>
-        <img src="./logo192.png" width={"6%"} />
-      </div>      
-      <div className='center-navbar'>
-      <h4>Our Services</h4>
-      <h4>About</h4>
-      <h4>Projects</h4>
+    <div className="nav-header">
+    <div className="header-bar">
+      <div className="header-img-container">
+        <NavLink to="/">
+          <img src="./logo192.png" alt="" width={"80px"} />
+        </NavLink>
+        {display ? (
+          <p className="cross" onClick={() => setDisplay(!display)}>
+            X
+          </p>
+        ) : (
+          <div className="burger" onClick={() => setDisplay(!display)}>
+            <div className="line"></div>
+            <div className="line"></div>
+          </div>
+        )}
       </div>
-      <div className="right-navbar">
-        <h4><i class="fa fa-phone" aria-hidden="true"></i> Contact US</h4>
-      </div>
+      {display ? <div className="nav-items">
+        <div className="item1">
+          <NavLink to="/services">Services</NavLink>
+          <NavLink to="/joinus">Join Us</NavLink>
+          <NavLink to="/project">Project</NavLink>
+        </div>
+        <div className="item2">
+          <NavLink to="/contact"><i class="fa fa-phone" aria-hidden="true"></i>  Contact</NavLink>
+        </div>
+      </div>:<></>}
     </div>
-  )
+  </div>  )
 }

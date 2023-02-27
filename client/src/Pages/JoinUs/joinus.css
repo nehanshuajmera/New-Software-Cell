@@ -1,0 +1,122 @@
+  .field{
+    margin-top: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .joinus{
+    height: 50vh;
+  }
+
+  .input-div{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+.subscribe input {
+    margin-bottom: 20px;
+  border: none;
+  border-bottom: 1px solid #d4d4d4;
+  padding: 10px;
+  width: 82%;
+  color: #03C988;
+  font-size: 40px;
+  background: transparent;
+  transition: all .25s ease;
+}
+
+.subscribe input:focus {
+  outline: none;
+  border-bottom: 1px solid #03C988;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', 'sans-serif';
+}
+
+.next-prev-btn{
+    background-color: #03C988;
+    padding-left: 10px;
+    padding: 5px;
+    margin-left: 20px;
+    border-radius: 5px;
+}
+
+.next-prev-div{
+    /* display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-content: end; */
+}
+
+
+
+.resumeupload .container {
+  /* height: 300px; */
+  /* width: 300px; */
+  border-radius: 10px;
+  box-shadow: 4px 4px 30px #03C988;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  gap: 5px;
+  background-color: rgba(0, 110, 255, 0.041);
+}
+
+.resumeupload .header {
+  flex: 1;
+  width: 100%;
+  border: 2px dashed royalblue;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.resumeupload .header svg {
+  height: 100px;
+}
+
+.resumeupload .header p {
+  text-align: center;
+  color: #03C988;
+}
+
+.resumeupload .footer {
+  background-color: rgba(0, 110, 255, 0.075);
+  width: 100%;
+  height: 40px;
+  padding: 8px;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  color: #03C988;
+  border: none;
+}
+
+.resumeupload .footer svg {
+  height: 130%;
+  fill: royalblue;
+  background-color: rgba(70, 66, 66, 0.103);
+  border-radius: 50%;
+  padding: 2px;
+  cursor: pointer;
+  box-shadow: 0 2px 30px rgba(0, 0, 0, 0.205);
+}
+
+.resumeupload .footer p {
+  flex: 1;
+  text-align: center;
+}
+
+#file {
+  display: none;
+}
+
