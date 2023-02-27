@@ -13,6 +13,11 @@ export default function Services() {
         <SingleTech img={"fa-brands fa-node fa-10x" } name={"NodeJs"}/>
         <SingleTech img={"fa-brands fa-android fa-10x" } name={"Android"}/>
         <SingleTech img={"fa-brands fa-python fa-10x" } name={"Python"}/>
+        <SingleTech img={"fa-brands fa-java fa-10x" } name={"JAVA"}/>
+        <SingleTech img={"fa-solid fa-database fa-10x" } name={"DataBase"}/>
+        <SingleTech img={"fa-solid fa-leaf fa-10x" } name={"Mongodb"}/>
+        <SingleTech img={"fa-brands fa-bootstrap fa-10x" } name={"Bootstrap"}/>
+        <SingleTech img={"fa-brands fa-php fa-10x" } name={"Bootstrap"}/>
   </div>
   </div>
   )
