@@ -1,0 +1,25 @@
+.project-page{
+    margin: 2% 12% 2% 12%;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fill,50vh);
+    text-align: center;
+    
+}
+
+.single-project-card{
+    margin: 10px;
+    margin-top: 25px;
+}
+
+.project-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.project-links i{
+    margin-left: 28px;
+    margin-right: 28px;
+}

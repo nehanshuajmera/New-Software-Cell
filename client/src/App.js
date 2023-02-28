@@ -7,6 +7,7 @@ import { Route, Routes } from "react-router-dom";
 import Contact from './Pages/Contactus/Contact';
 import Joinus from './Pages/JoinUs/Joinus';
 import Services from './Pages/Services/Services';
+import Project from './Pages/Project/Project';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route  path='/contact' element={<Contact/> }/>
         <Route  path='/joinus' element={<Joinus/> }/>
         <Route  path='/services' element={<Services/> }/>
+        <Route  path='/project' element={<Project/> }/>
       </Routes>
       <Footer/>
     </div>
