@@ -8,7 +8,8 @@ export default function Header() {
     <div className="header-bar">
       <div className="header-img-container">
         <NavLink to="/">
-          <img src="./logo192.png" alt="" width={"80px"} />
+          <h2 style={{color:"white"}}>Software Cell</h2>
+          {/* <img src="./logo192.png" alt="" width={"80px"} /> */}
         </NavLink>
         {display ? (
           <p className="cross" onClick={() => setDisplay(!display)}>

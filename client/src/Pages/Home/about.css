@@ -11,7 +11,7 @@
 }
 
 .right-section .card {
-  width: 250px;
+  width: 280px;
   height: 360px;
   background: #07182E;
   position: relative;
@@ -24,7 +24,7 @@
 
 .right-section .card img {
   z-index: 1;
-  width: 290%;
+  width: 280%;
   color: white;
   font-size: 2em;
 }
