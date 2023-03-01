@@ -16,10 +16,11 @@ router.post("/", async (req, res) => {
 
             var mailOptions = {
                 from: 'info.xtrimcoder@gmail.com',
-                to: 'sharma39vishal@gmail.com',
-                subject: "Software Cell Contact Message",
+                to: ['sharma39vishal@gmail.com',"nehanshuajmera@gmail.com"],
+                subject: "Software Cell Join US",
                 text:
-                    `Name: ${name}
+                    `Mail For Recuritment
+Name: ${name}
 Phone Number: ${phoneno}
 Email : ${email}
 Enrollment No : ${enrollment}

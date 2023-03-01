@@ -17,8 +17,8 @@ export default function Header() {
           </p>
         ) : (
           <div className="burger" onClick={() => setDisplay(!display)}>
-            <div className="line"></div>
-            <div className="line"></div>
+            <div className="line" ></div>
+            <div className="line" ></div>
           </div>
         )}
       </div>
@@ -26,6 +26,7 @@ export default function Header() {
         <div className="item1">
           <NavLink to="/services">Services</NavLink>
           <NavLink to="/joinus">Join Us</NavLink>
+          <NavLink to="/gallery">Gallery</NavLink>
           <NavLink to="/project">Project</NavLink>
         </div>
         <div className="item2">

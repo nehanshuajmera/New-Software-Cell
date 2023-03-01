@@ -8,6 +8,7 @@ import Contact from './Pages/Contactus/Contact';
 import Joinus from './Pages/JoinUs/Joinus';
 import Services from './Pages/Services/Services';
 import Project from './Pages/Project/Project';
+import Gallery from './Pages/Gallery/Gallery';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route  path='/joinus' element={<Joinus/> }/>
         <Route  path='/services' element={<Services/> }/>
         <Route  path='/project' element={<Project/> }/>
+        <Route  path='/gallery' element={<Gallery/> }/>
       </Routes>
       <Footer/>
     </div>

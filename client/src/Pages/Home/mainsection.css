@@ -46,3 +46,25 @@
   transition: 0.3s;
   transform: scale(0.93);
 }
+
+
+.mainsection .column {
+  float: left;
+  width: 60%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.mainsection .row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .mainsection .column {
+    width: 100%;
+  }
+}

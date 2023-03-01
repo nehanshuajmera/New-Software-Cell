@@ -18,8 +18,8 @@
   }
 
 
-.subscribe input {
-    margin-bottom: 20px;
+.subscribe input,select {
+  margin-bottom: 20px;
   border: none;
   border-bottom: 1px solid #d4d4d4;
   padding: 10px;
