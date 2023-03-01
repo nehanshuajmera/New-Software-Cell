@@ -18,7 +18,7 @@ export default function Contact() {
   
   const handleSubmit=(e)=>{   
   // console.log(FormData);
-  axios.post(`http://localhost:5000/contactus/`, FormData)
+  axios.post(`/contactus/`, FormData)
   .then((res) => {
     // console.log(res);
     alert("Message Sent Successfully");

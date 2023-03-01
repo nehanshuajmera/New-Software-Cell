@@ -9,7 +9,7 @@ export default function Joinus() {
   const navigate=useNavigate()
   const [content, setcontent] = useState({"name":"","phoneno":"","email":"","field":"","branch":"","resumelink":"","enrollment":""});
   const FormSubmit=(e)=>{   
-    axios.post(`http://localhost:5000/connectus/`, content)
+    axios.post(`/connectus/`, content)
     .then((res) => {
       alert("Message Sent Successfully");
       navigate('/');
