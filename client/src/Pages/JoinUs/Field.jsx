@@ -37,11 +37,18 @@ export default function Field(props) {
     props.FormSubmit();
     }
   }
+
+  const entersubmit=(e)=> {
+    if (e.keyCode === 13) {
+      movenxt();
+    }
+  }
+
   return (
         <div className='field'>
             <div className='input-div subscribe'>
              <h1>{props.ques}</h1>
-             <input type="text" onChange={handleChange} name={s} value={props.content[s]} class="subscribe-input" placeholder={props.placeholder}/>
+             <input type="text" onChange={handleChange} onKeyDown={(e) => entersubmit(e)} name={s} value={props.content[s]} class="subscribe-input" placeholder={props.placeholder}/>
              <div className='next-prev-div'>
              {props.idx!==0?<button className='next-prev-btn' onClick={()=>{props.setidx(props.idx-1)}}>Prev</button>:<></>}
              {props.idx!==6?<button className='next-prev-btn' onClick={()=>{movenxt()}}>Next</button>:<></>}

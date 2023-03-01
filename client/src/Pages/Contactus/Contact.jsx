@@ -1,7 +1,9 @@
 import React, { useState } from 'react'
 import "./contact.css"
 import axios from 'axios'
+import { useNavigate } from 'react-router-dom';
 export default function Contact() {
+  const navigate=useNavigate();
   const [FormData,setFormData]=useState({
     name:"",
     message:"",
@@ -22,6 +24,7 @@ export default function Contact() {
   .then((res) => {
     // console.log(res);
     alert("Message Sent Successfully");
+    navigate("/")
   })
   .catch((err) => {
     console.log(err);
@@ -52,7 +55,8 @@ export default function Contact() {
             <span>CONTACT</span>
             <span>US</span>
           </div>
-          <div className="app-contact">CONTACT INFO : +62 81 314 928 595</div>
+          <div className="app-contact">CONTACT INFO : +91 7000 253 811,
+          +91 8269 991 528</div>
         </div>
         <div className="screen-body-item">
           <div className="app-form">
@@ -74,7 +78,7 @@ export default function Contact() {
               <input type="text" className="app-form-control" placeholder="MESSAGE" value={FormData.message} onChange={handleChange} name="message" />
             </div>
             <div className="app-form-group buttons">
-              <button className="app-form-button">CANCEL</button>
+              <button className="app-form-button" onClick={()=>{navigate("/")}}>CANCEL</button>
               <button className="app-form-button" onClick={()=>{handleSubmit()}}>SEND</button>
             </div>
           </div>
