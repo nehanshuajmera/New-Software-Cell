@@ -1,6 +1,34 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "./contact.css"
+import axios from 'axios'
 export default function Contact() {
+  const [FormData,setFormData]=useState({
+    name:"",
+    message:"",
+    email:"",
+    phoneno:"",
+  });
+  const handleChange=(e)=>{
+    const { name, value } = e.target
+    setFormData({
+           ...FormData,
+           [name]: value
+       })
+  }
+  
+  const handleSubmit=(e)=>{   
+  // console.log(FormData);
+  axios.post(`http://localhost:5000/contactus/`, FormData)
+  .then((res) => {
+    // console.log(res);
+    alert("Message Sent Successfully");
+  })
+  .catch((err) => {
+    console.log(err);
+  });
+  
+}
+
   return (
     <div>
       <div className="background">
@@ -29,24 +57,25 @@ export default function Contact() {
         <div className="screen-body-item">
           <div className="app-form">
             <div className="app-form-group">
-              <input
+              <input type="text"
                 className="app-form-control"
                 placeholder="NAME"
                 defaultValue=""
+                value={FormData.name} onChange={handleChange} name="name"
               />
             </div>
             <div className="app-form-group">
-              <input className="app-form-control" placeholder="EMAIL" />
+              <input type="email" className="app-form-control" placeholder="EMAIL" value={FormData.email} onChange={handleChange} name="email" />
             </div>
             <div className="app-form-group">
-              <input className="app-form-control" placeholder="CONTACT NO" />
+              <input type="tel" className="app-form-control" placeholder="CONTACT NO" value={FormData.phoneno} onChange={handleChange} name="phoneno" />
             </div>
             <div className="app-form-group message">
-              <input className="app-form-control" placeholder="MESSAGE" />
+              <input type="text" className="app-form-control" placeholder="MESSAGE" value={FormData.message} onChange={handleChange} name="message" />
             </div>
             <div className="app-form-group buttons">
               <button className="app-form-button">CANCEL</button>
-              <button className="app-form-button">SEND</button>
+              <button className="app-form-button" onClick={()=>{handleSubmit()}}>SEND</button>
             </div>
           </div>
         </div>
