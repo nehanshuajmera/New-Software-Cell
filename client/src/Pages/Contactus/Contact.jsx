@@ -55,8 +55,8 @@ export default function Contact() {
             <span>CONTACT</span>
             <span>US</span>
           </div>
-          <div className="app-contact">CONTACT INFO : +91 7000 253 811,
-          +91 8269 991 528</div>
+          <div className="app-contact">CONTACT INFO : +91 7000253811,
+          +91 8269991528</div>
         </div>
         <div className="screen-body-item">
           <div className="app-form">

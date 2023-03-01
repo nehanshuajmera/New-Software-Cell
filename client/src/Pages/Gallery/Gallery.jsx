@@ -6,7 +6,7 @@ export default function Gallery() {
   return (
     <div>
       <>
-      <h1 style={{textAlign:"center"}}>Gallery</h1>
+      <h1 style={{textAlign:"center",fontWeight:"bold"}}>Gallery</h1>
   <div className="container">
     <div className="container__img-holder">
       <img

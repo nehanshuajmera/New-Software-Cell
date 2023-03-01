@@ -1,5 +1,5 @@
   .field{
-    margin-top: 20vh;
+    /* margin-top: 20vh; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -25,7 +25,7 @@
   border-bottom: 1px solid #d4d4d4;
   padding: 10px;
   width: 82%;
-  color: #03C988;
+  color: #E5E5CB;
   font-size: 40px;
   background: transparent;
   transition: all .25s ease;
@@ -33,14 +33,13 @@
 
 .subscribe input:focus {
   outline: none;
-  border-bottom: 1px solid #03C988;
+  border-bottom: 1px solid #E5E5CB;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', 'sans-serif';
 }
 
 .next-prev-btn{
-    background-color: #03C988;
-    padding-left: 15px;
-    padding: 5px;
+    background-color: #E5E5CB;
+    padding: 10px 20px ;
     margin-left: 20px;
     border-radius: 5px;
 }

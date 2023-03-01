@@ -50,8 +50,8 @@ export default function Field(props) {
              <h1>{props.ques}</h1>
              <input type="text" onChange={handleChange} onKeyDown={(e) => entersubmit(e)} name={s} value={props.content[s]} class="subscribe-input" placeholder={props.placeholder}/>
              <div className='next-prev-div'>
-             {props.idx!==0?<button className='next-prev-btn' onClick={()=>{props.setidx(props.idx-1)}}>Prev</button>:<></>}
-             {props.idx!==6?<button className='next-prev-btn' onClick={()=>{movenxt()}}>Next</button>:<></>}
+             {props.idx!==0?<button className='next-prev-btn' onClick={()=>{props.setidx(props.idx-1)}}><i class="fa-solid fa-angle-left"></i> Prev</button>:<></>}
+             {props.idx!==6?<button className='next-prev-btn' onClick={()=>{movenxt()}}>Next <i class="fa-solid fa-angle-right"></i></button>:<></>}
              {props.idx===6?<button className='next-prev-btn' onClick={()=>{submitit()}}>Submit</button>:<></>}
              </div>
             </div>

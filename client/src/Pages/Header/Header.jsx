@@ -8,7 +8,7 @@ export default function Header() {
     <div className="header-bar">
       <div className="header-img-container">
         <NavLink to="/">
-          <h2 style={{color:"white"}}>Software Cell</h2>
+          <h2 style={{color:"#E5E5CB"}}><i class="fa-solid fa-code"></i> Software Cell</h2>
           {/* <img src="./logo192.png" alt="" width={"80px"} /> */}
         </NavLink>
         {display ? (

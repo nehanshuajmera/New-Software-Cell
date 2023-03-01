@@ -4,7 +4,7 @@ import SingleTech from './SingleTech'
 export default function Services() {
   return (
     <div>
-    <h1 style={{textAlign:"center", color:"#FEC868"}}>Major Techonology</h1>
+    <h1 style={{textAlign:"center", color:"#FEC868",fontWeight:"bold"}}>Major Techonology</h1>
     <div className='services'>
         <SingleTech img={"fab fa-html5 fa-10x" } name={"HTML"}/>
         <SingleTech img={"fa-brands fa-css3-alt fa-10x" } name={"CSS"}/>
