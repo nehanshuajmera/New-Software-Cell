@@ -30,7 +30,7 @@
 }
 .item1 a{
     text-decoration: none;
-    font-size: 21px;
+    font-size: 16px;
     padding: 20px 10px;
     font-weight: 600;
     margin: 0 15px;
@@ -41,10 +41,10 @@
     padding: 20px 10px;
 }
 .item2 a{
-    font-size: 21px;
+    font-size: 16px;
     color: #D5CEA3;
     text-decoration: none;
-    padding-top: 5px;
+    padding-top: 3px;
     font-weight: 600;
 }
 .cross{
