@@ -1,4 +1,4 @@
-.nav-header{
+.nav-header {
     width: 100%;
     display: flex;
     /* position: fixed;
@@ -6,29 +6,37 @@
     z-index: 1000000000; */
     justify-content: center;
 }
-.header-bar{
+
+a {
+    text-decoration: none;
+}
+
+.header-bar {
     width: 80%;
     padding: 10px 20px 10px 20px;
     display: flex;
     justify-content: space-between;
 }
 
-.header-img-container{
+.header-img-container {
     display: flex;
     justify-content: space-between;
 }
-.nav-items{
+
+.nav-items {
     display: flex;
     justify-content: space-between;
     width: 65%;
 }
-.item1{
+
+.item1 {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-   
+
 }
-.item1 a{
+
+.item1 a {
     text-decoration: none;
     font-size: 21px;
     padding: 20px 10px;
@@ -36,28 +44,36 @@
     margin: 0 15px;
     color: #D5CEA3;
 }
-.item2{
+
+.item2 {
     font-size: 21px;
     padding: 20px 10px;
 }
-.item2 a{
+
+.item2 a {
     font-size: 21px;
     color: #D5CEA3;
     text-decoration: none;
     padding-top: 5px;
     font-weight: 600;
 }
-.cross{
+
+.cross {
     /* background-color: #D5CEA3; */
     color: #D5CEA3;
     display: none;
 }
+
 @media only screen and (max-width: 1024px) {
-    .header-bar, .item1, .nav-items{
+
+    .header-bar,
+    .item1,
+    .nav-items {
         flex-direction: column;
         width: 90%;
     }
-    .cross{
+
+    .cross {
         border: 1px solid #D5CEA3;
         padding: 20px;
         border-radius: 8px;
@@ -67,12 +83,15 @@
         align-items: center;
         font-weight: 600;
     }
-    .item1 a, .item2 a{
+
+    .item1 a,
+    .item2 a {
         margin: 0;
         color: #D5CEA3;
         font-size: 30px;
     }
-    .burger{
+
+    .burger {
         /* color: #D5CEA3; */
         /* background-color: #D5CEA3; */
         border: 1px solid #D5CEA3;
@@ -83,7 +102,8 @@
         align-items: center;
         flex-direction: column;
     }
-    .line{
+
+    .line {
         /* color: #D5CEA3; */
         background-color: #D5CEA3;
         width: 21px;
@@ -92,5 +112,3 @@
         margin: 3px 0;
     }
 }
-
-
