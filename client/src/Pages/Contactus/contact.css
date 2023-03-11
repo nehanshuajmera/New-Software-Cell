@@ -146,6 +146,18 @@ button, input {
     transition: border-color .2s;
   }
   
+  .app-form-control1 {
+    width: 100%;
+    padding: 10px 0;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #666;
+    color: #3C2A21;
+    font-size: 14px;
+    outline: none;
+    transition: border-color .2s;
+  }
+  
   .app-form-control::placeholder {
     color: #666;
   }

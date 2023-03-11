@@ -69,7 +69,7 @@ export default function Contact() {
               />
             </div>
             <div className="app-form-group">
-              <input type="email" id="email" className="app-form-control" placeholder="EMAIL" value={FormData.email} onChange={handleChange} name="email" />
+              <input type="email" id="email" className="app-form-control1" placeholder="EMAIL" value={FormData.email} onChange={handleChange} name="email" />
             </div>
             <div className="app-form-group">
               <input type="tel" className="app-form-control" placeholder="CONTACT NO" value={FormData.phoneno} onChange={handleChange} name="phoneno" />
