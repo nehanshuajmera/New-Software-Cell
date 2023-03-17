@@ -10,19 +10,17 @@
     margin-left: 30px;
 }
 
-.right-section .card {
-  width: 280px;
-  height: 360px;
-  background: #07182E;
+.right-section {
+
   position: relative;
   display: flex;
   place-content: center;
   place-items: center;
-  overflow: hidden;
+  /* overflow: hidden; */
   border-radius: 20px;
 }
 
-.right-section .card img {
+.right-section img {
   z-index: 1;
   width: 280%;
   color: white;

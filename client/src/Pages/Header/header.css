@@ -1,10 +1,17 @@
 .nav-header {
     width: 100%;
     display: flex;
-    /* position: fixed;
+    position: fixed;
     top: 0;
-    z-index: 1000000000; */
+    z-index: 1000000000;
     justify-content: center;
+    /* filter: blur(8px);
+  -webkit-filter: blur(8px); */
+  /* backdrop-filter: invert(80%); */
+  backdrop-filter: blur(10px);
+  /* background-color: #ffff; */
+  /* background-color: #13005A; */
+
 }
 
 a {
@@ -13,7 +20,7 @@ a {
 
 .header-bar {
     width: 80%;
-    padding: 10px 20px 10px 20px;
+    /* padding: 10px 20px 10px 20px; */
     display: flex;
     justify-content: space-between;
 }
@@ -25,6 +32,7 @@ a {
 
 .nav-items {
     display: flex;
+    align-items: center;
     justify-content: space-between;
     width: 65%;
 }
