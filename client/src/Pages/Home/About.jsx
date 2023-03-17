@@ -7,7 +7,11 @@ export default function About() {
           <h1 style={{textAlign:"center"}}>About Us</h1>          
         <div  className='about-section'>
           <div className='right-box'>
-       <AboutCard/>
+      
+           <div className='right-section'>
+     
+        <img src='https://cdn3d.iconscout.com/3d/premium/thumb/business-team-working-on-project-4759624-3975856.png' alt=''/>
+     </div>
        </div>
         <div className='left-box' style={{marginTop:"0px"}}>
             <h3 style={{textAlign:"center"}}> 

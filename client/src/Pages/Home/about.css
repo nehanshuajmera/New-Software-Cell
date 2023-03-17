@@ -1,14 +1,14 @@
 .about-section{
     display: flex;
-    margin: 10px 12% 10px 12%;
+    
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
 }
 
-.left-section{
+/* .left-section{
     margin-left: 30px;
-}
+} */
 
 .right-section {
 

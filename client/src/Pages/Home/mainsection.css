@@ -3,13 +3,16 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    margin: 20px;
+    /* margin: 20px; */
 }
-
-.right-box{
+.medi-img{
+  display: flex;
+  justify-content: center;
+}
+/* .right-box{
   margin: 10px;
  width: 18rem;
-}
+} */
 .left-box{
   text-align: center;
   width: 28rem;

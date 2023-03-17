@@ -8,6 +8,11 @@ export default function MainSection() {
   return (
     <div className='mainsection'>
         <div className='right-box'>
+          <div className="medi-img">
+        <img style={{width:"120px", textAlign:"center"}} src="https://miifoundation.cyclic.app/images/medicaps.png" alt="medicaps" />
+        </div>
+            <h1 style={{textAlign:"center", fontSize:"50px"}} >
+              Medi-Caps</h1>
             <h1 style={{textAlign:"center", fontSize:"50px"}} >Software Development Cell</h1>
              <div style={{display:"flex",justifyContent:"center"}}>
             <button  onClick={()=>{navigate("/joinus")}} data-label="Register" class="rainbow-hover">
